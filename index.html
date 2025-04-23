@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify </title>
+    <link rel="stylesheet" href="style_main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href=""><img class="logo-icon" src="" alt="">
+                    <p class="logo-title">READIFY</p>
+                </a></li>
+            <li><a href="main.html"> Home</a></li>
+            <li><a href="about_us.html"> About us</a></li>
+            <li><a href="#footer"> Contact</a></li>
+            <li><a href="signup.html"> <img class="profile-icon" src="user-profile.svg" alt=""> Readify</a></li>
+            <li onclick=showSidebar()><a href="#"> <img class="menu-icon" src="bars-solid.svg" alt=""></a></li>
+        </ul>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href=""> <img class="cross-icon" src="xmark-solid.svg"></a> </li>
+            <li><a href="signup.html"> Sign up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#"> Logout</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- home  page -->
+    <h1 class="title">Trending Posts <i class="fa-sharp-duotone fa-solid fa-arrow-trend-up"></i></h1>
+    <div class="container">
+        <button class="scrollLeft"><img class="scrollLeft" src="angle-left-solid.svg" alt="" tabindex="-1"></button>
+        <ul>
+            <li class="Trending-posts">
+                <div class="post-img"><img  src="https://th.bing.com/th/id/OIP.aBDObY74OShjj5blG9cBFAHaEK?w=321&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""></div>
+               
+                <div class="post-content">
+                    <p><a href="blog-2.html">The Rise of AI : Transforming Our World !!!</a></p>
+                      
+                    <i class="far fa-user"></i> User &nbsp;&nbsp;
+                    <i class="far fa-calendar"></i> 4 Oct ,2024
+                </div>
+            </li>
+            <li class="Trending-posts">
+                 <div class="post-img"><img style="height: 230px; width: 370px; margin-left: 40px;" src="https://cdn.wallpapersafari.com/67/76/AtjRLE.jpg" alt=""></div>
+               
+                <div class="post-content">
+                    <p><a href="blog-2.html">What to Expect from the Revival of the Legendary Anime</a></p>
+                      
+                    <i class="far fa-user"></i> User &nbsp;&nbsp;
+                    <i class="far fa-calendar"></i> 4 Oct ,2024
+                </div>
+            </li>
+            <li class="Trending-posts">
+                 <div class="post-img"><img style="height: 230px; width: 370px; margin-left: 30px;" src="https://img.freepik.com/premium-photo/world-book-day_818771-1240.jpg" alt=""></div>
+               
+                <div class="post-content">
+                    <p><a href="blog-2.html">Turning Pages: Exploring the Books That Shape Our World</a></p>
+                      
+                    <i class="far fa-user"></i> User &nbsp;&nbsp;
+                    <i class="far fa-calendar"></i> 4 Oct ,2024
+                </div>
+            </li>
+            <li class="Trending-posts">
+                 <div class="post-img"><img src="https://influencermarketinghub.com/wp-content/uploads/2018/06/mia-mia-mine.jpg.webp" style="height: 220px;" alt=""></div>
+               
+                <div class="post-content">
+                    <p><a href="blog-2.html">The Designer’s Canvas: Where Style Begins</a></p>
+                      
+                    <i class="far fa-user"></i> User &nbsp;&nbsp;
+                    <i class="far fa-calendar"></i> 4 Oct ,2024
+                </div>
+            </li>
+            <li class="Trending-posts">
+                 <div class="post-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE-DlbgSKs-axpkKizxNsABRTb6Ym3iviSHg&s" style="margin-left: 29px;  height: 229px;" alt=""></div>
+               
+                <div class="post-content">
+                    <p><a href="blog-2.html">Tasteful Journeys: Exploring the World of Food</a></p>
+                      
+                    <i class="far fa-user"></i> User &nbsp;&nbsp;
+                    <i class="far fa-calendar"></i> 4 Oct ,2024
+                </div>
+            </li>
+        </ul>
+        <button class="scrollRight"><img class="scrollRight" src="angle-right-solid.svg" alt="" tabindex="-1"></button>
+    </div>
+
+    <div class="lightbox-modal">
+        <span class="close">&times;</span>
+        <img src="" alt="Preview">
+    </div>
+
+
+    <main>
+
+        <div class="main-body">
+            <h1 class="heading-recent-posts">Recent Posts</h1>
+            <div class="paras">
+                <div class="left-para">
+
+                    <div class="post123"><img src="https://www.infocepts.ai/wp-content/uploads/2023/01/Why-do-analytics-projects-fail.png">
+                    
+                        <div class="recent-post-content">
+                            <p><h2>Every Failure is just an another step closer to Success .</h2>
+                            </p><br>
+                            <i class="far fa-user"></i>User &nbsp;&nbsp;
+                            <i class="far fa-calendar"></i>Oct 4 ,2024 <br> <br>
+                            <p>     "Failure is not the end, but a stepping stone to success. Each setback teaches us lessons that success alone cannot. Embrace your mistakes, for they are the seeds of growth, leading you closer to your true potential.</p>
+                            <button><a href="blog-1.html" style="text-decoration: none; ;">Read More</a></button>
+                        </div>
+                
+                    </div>
+                    
+                    <div class="post123"><img src="https://offsprout.com/wp-content/uploads/2019/04/My-Life-s-a-Movie-Adventure-Travel-Solo-Travel.png">
+                        <div class="recent-post-content">
+                            <p><h2>Globe-Trotting Diaries: Journey Beyond Borders .</h2>
+                            </p><br>
+                            <i class="far fa-user"></i>User &nbsp;&nbsp;
+                            <i class="far fa-calendar"></i>Oct 4 ,2024 <br> <br>
+                            <p>     Explore the world through my travel experiences, tips, and guides. Whether it's a weekend getaway or a life-changing adventure, this blog will inspire you to pack your bags and discover new horizons</p>
+                            <button><a style="text-decoration: none;" href="">Read More</a></button>
+                        </div>
+                        
+                    </div>
+                    <div class="post123"><img style="width: 500px;" class="lastpic"  src="https://images.everydayhealth.com/images/seo-graphic-content-initiative/eh-how-to-get-the-most-out-of-your-workout-alt-seo-graphics-gs.png?sfvrsn=735cea36_8">
+                      
+                        <div class="recent-post-content">
+                            <p><h2>The Everyday Edit: Curating a Life You Love</h2>
+                            </p><br>
+                            <i class="far fa-user"></i>User &nbsp;&nbsp;
+                            <i class="far fa-calendar"></i>Oct 4 ,2024 <br> <br>
+                            <p>
+                                Curate your ideal lifestyle with inspiration for health, style, home, and personal growth. From wellness tips to productivity hacks, this blog is about living intentionally and creating a life that brings you joy every day.</p>
+                            <button><a style="text-decoration: none;" href="">Read More</a></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right-para">
+                    <div class="search-title">
+                        <h2>Search <i class="fa-solid fa-magnifying-glass"></i></h2>
+                    </div>
+                    <div class="search-box">
+                        <input type="search" id="searchBar" placeholder="Search . . .">
+                        <ul id="suggestions" style="list-style: none; padding: 0; margin-top: 10px;"></ul>
+                    </div>
+                    <div class="topics">
+                        <h2>Trending Topics <i class="fas fa-fire"></i></h2>
+
+                        <p class="topics-content"><a href="#"> <i class="fa-solid fa-chart-simple"></i> &nbsp; Poems </a></p>
+
+
+                        <p class="topics-content"> <a href="#"> <i class="fa-solid fa-chart-simple"></i> &nbsp;Quotes </a> </p>
+
+
+                        <p class="topics-content"> <a href="#"> <i class="fa-solid fa-chart-simple"></i> &nbsp;Fiction </a></p>
+
+
+                        <p class="topics-content"> <a href="#"> <i class="fa-solid fa-chart-simple"></i> &nbsp;Biography</a></p>
+
+
+                        <p class="topics-content"> <a href="#"> <i class="fa-solid fa-chart-simple"></i> &nbsp;Inspiration</a></p>
+
+
+                        <p class="topics-content"> <a href="#"> <i class="fa-solid fa-chart-simple"></i> &nbsp;Motivation</a></p>
+
+
+
+                        <p class="topics-content"><a href="#"> <i class="fa-solid fa-chart-simple"></i> &nbsp;Life Lessons</a></p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- main body - 2 -->
+    <div class="lightbox-modal" style="display: none;">
+        <span class="close">&times;</span>
+        <img src="" id="lightboxImage" alt="Preview">
+    </div>
+    
+    
+    <div class="main_2">
+
+        <h2 class="main_2_headings" id="aboutTheWorld" style="margin-top: 40px; margin-bottom: 10px;" >About The World</h2>
+
+
+        <section class="blog-boxes" id="blogBoxes">
+            
+            <div class="blog-box main_2_img" >
+                <img src="https://mitwpu.edu.in/uploads/blog/Unveiling-the-World-of-Design-Careers-From-Graphic-Design-to-Industrial-Design.webp" height="350px" width="200px" alt="Blog Post">
+                <div class="blog-box-content">
+                    <h3>Exploring the World of Design</h3>
+                    <p>Discover the latest trends in web and graphic design. From color palettes to layouts, we dive into the design elements that are shaping the future.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            
+            <div class="blog-box" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjlGu6EkHSjqncz3BqblD5oWDXW7SayopQIA&s" height="350px" width="200px" alt="Blog Post">
+                <div class="blog-box-content">
+                    <h3>The Art of Digital Photography</h3>
+                    <p>Photography has evolved in the digital age, allowing more creativity and freedom. Learn the tips and tricks of mastering digital photography.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            
+           
+
+            
+            <div class="blog-box" >
+                <img src="https://www.e2webservices.com/blog/wp-content/uploads/2022/01/business-growth.jpg" height="350px" width="200px" alt="Blog Post">
+                <div class="blog-box-content">
+                    <h3>How to Grow Your Online Business</h3>
+                    <p>Building a successful online business requires strategic planning and consistent effort. Discover the steps to turn your idea into a thriving business.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div><br>
+            <h2 class="main_2_headings" id="aiAndTechnology">AI and Technology</h2><br>
+
+           <section style="display: flex;">
+                   <div class="blog-box" >
+                <img src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" height="350px" width="200px" alt="Blog Post">
+                <div class="blog-box-content">
+                    <h3>The Future of Artificial Intelligence</h3>
+                    <p>AI is transforming industries across the globe. Explore how it’s changing everything from healthcare to entertainment, and what the future holds.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            
+            <div class="blog-box" >
+                <img src="https://elblog.pl/wp-content/uploads/2024/07/compressed_img-tm8NbvszFaoSM4HNZQwBBr2C.png" height="350px" width="200px" alt="Blog Post">
+                <div class="blog-box-content">
+                    <h3>The Rise of Virtual Reality</h3>
+                    <p>Virtual reality is no longer just a gaming tool. Learn how VR is being used for education, healthcare, and immersive experiences in the real world.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            
+            
+            
+            <div class="blog-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoN9HtDX3Sdz5M7pww3VcdeaGHOUX_fyFFcg&s" height="350px" width="200px" alt="Blog Post">
+                <div class="blog-box-content">
+                    <h3>Unleashing Creativity in Graphic Design</h3>
+                    <p>Push the boundaries of your creative work by incorporating new techniques, trends, and perspectives in graphic design.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div><br>
+        </section>
+     
+            <h2 class="main_2_headings" id="socialMedia">Social Media</h2><br>
+
+            
+        <section style="display: flex;">            
+            <div class="blog-box" >
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/YZ9bnELxzJcq0a6d/mastering-content-strategy-a-comprehensive-guide-for-your-websiteas-success-YZ9beo9v3nSx4xVO.jpeg" height="350px" width="200px" alt="Blog Post">
+                <div class="blog-box-content">
+                    <h3>Mastering Web Content Strategy</h3>
+                    <p>Develop a content strategy that attracts, engages, and converts visitors. Learn key practices for writing and distributing web content.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            
+            <div class="blog-box" >
+                <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F840089729%2F659554386193%2F1%2Foriginal.20240903-081310?auto=format%2Ccompress&q=75&sharp=10&s=08f9951032229042b31f0ec8c8ff1a8a" height="350px" width="200px" alt="Blog Post">
+                <div class="blog-box-content">
+                    <h3>The Secrets of Branding</h3>
+                    <p>Branding is more than just a logo. Learn the secrets behind creating a memorable, authentic brand that resonates with your audience.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            
+            <div class="blog-box" >
+                <img src="https://channel-fusion.com/wp-content/uploads/2023/11/Navigating-Social-Media-Landscape-1-scaled.jpeg" height="350px" width="200px" alt="Blog Pos">
+                <div class="blog-box-content">
+                    <h3>Navigating Social Media Marketing</h3>
+                    <p>Social media can be a powerful tool for business growth. Learn how to create a strategy, engage with your audience, and increase visibility.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+            </div><br>
+        </section>
+
+            
+            
+
+
+        </section>
+    </div>
+
+
+
+   
+    
+</body>
+
+</html>
