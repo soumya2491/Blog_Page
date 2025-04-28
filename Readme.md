@@ -23,5 +23,5 @@ Welcome to the Readify! This is a responsive and modern website created using **
 ## Setup Instructions
 1. Clone the repo:
 ```bash
-git clone https://github.com/yourusername/blog-project.git
-cd blog-project
+git clone https://github.com/soumya2491/Blog_Page.git
+cd Blog_Page
