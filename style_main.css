@@ -489,7 +489,7 @@ nav li:first-child{
     .main_2_headings {
         scroll-margin-top: 80px; /* Adjust based on your header height */}
 
-                  /* FOOTER    */
+                /*   FOOTER    */
 footer{
     margin-top: 90px;
 }
@@ -546,7 +546,7 @@ footer{
 .footer-section ul li{
     padding: 10px;
     
-} 
+}
 .quick-link-links{
     text-decoration: none;
     color: white;
@@ -631,34 +631,3 @@ footer{
 .lastpic{
     width: 500px !important;
 }
-
-          /* mediatags (responsive) */
-/* 
-@media (max-width: 768px) {
-    .container {
-        margin-left: 0px !important;
-        width: 100%;
-        height: 300px;
-        overflow-x: scroll;
-    }
-    .container ul li {
-        width: 90%;
-        margin: 0px 20px;
-    }
-    .post123 img{
-        height: 200px;
-        width: 100%;
-    }
-    .left-para {
-        width: 100%;
-    }
-    .right-para {
-        width: 100%;
-    }
-    .blog-boxes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
- */
