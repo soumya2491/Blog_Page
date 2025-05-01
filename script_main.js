@@ -1,4 +1,56 @@
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+// alert("welcome")
+
+const container = document.querySelector('.container');
+const leftButton = document.querySelector('.scrollLeft');
+const rightButton = document.querySelector('.scrollRight');
+const scrollAmount = 400; 
+
+leftButton.addEventListener('click', function(e) {
+    e.preventDefault(); 
+    container.scrollBy({
+        left: -scrollAmount, 
+        behavior: 'smooth'
+    });
+});
+
+rightButton.addEventListener('click', function(e) {
+    e.preventDefault(); 
+    container.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+});
+
+function autoScroll(){
+    container.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    })};
+
+   setInterval(autoScroll, 2100);
+
+    function autoScroll() {
+        if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+            container.scrollTo({ left: 0, behavior: 'smooth' }); 
+        } else {
+            container.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+
 // searchbar
+
 document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchBar"); 
     const suggestionsBox = document.getElementById("suggestions");
