@@ -1,0 +1,225 @@
+/* 
+.logo-icon{
+margin-left: 60px;
+height: 66px;
+}
+.phone{
+height: 20px;
+
+}
+.socials img{
+margin: 20px 5px;
+height: 40px;
+border: 3px solid black;
+padding: 5px;
+border-radius: 6px;
+} */
+/* .lastline{ */
+/* display: flex;
+justify-content: center; */
+/* margin: 30px;
+border-radius: 6px;
+background-color: white;
+gap: 10px;
+padding: 10px;
+width: max-content;
+color: #171718;
+
+
+}
+.mail-logo{
+height: 30px;
+
+
+
+}
+.send{
+text-align: center;
+display: inline-flex;
+background-color: white;
+}
+.profile-icon{
+height: 26px;
+}
+.calender-icon{
+height: 20px;
+}
+.menu-icon{
+height: 26px;
+}
+.cross-icon{
+height: 26px;
+}
+
+ */
+
+  /* mediatags (responsive) */
+
+
+
+
+  body {
+    margin: 0;
+    background-color: #d5dcdb;;
+    position: relative;
+    /* background:linear-gradient(to bottom,#d6c4e0, #f4d3e6,#a5e5ee, #f1c6ac,#a8c8e2, #cceef4, #8df3ac, #8df3ac, #93e8c0, #92e7f3,#f0b1d6,#e0f7fa);
+    overflow: scroll; */
+    /* font-family: anton sc , sans-serif; */
+    
+    }
+    body, html {
+    scroll-behavior: smooth; /* Enable smooth scrolling across the entire page */
+    }
+    
+    * {margin: 0px;
+    padding: 0px;
+    font-family: candal, serif ;
+    scrollbar-width: none;
+    }
+    .logo-title{
+    display: inline;
+    font-size: 50px;
+    font-family: anton sc , sans-serif;
+    color: #303036;
+    
+    
+    }
+    
+    nav{margin-top: 0px;
+    padding: 0px;
+    background-color:#aecccf;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+    }
+    nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    width:100%
+    
+    }
+    nav li{
+    height: 66px;
+    font-size: 30px;
+    }
+    nav a{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: #171718;
+    height: 100%;
+    }
+    nav li :hover{
+    text-decoration:underline;
+    transition: 0.5s;
+    
+    
+    }
+    nav li:first-child{
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    .sidebar{
+    color: red;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.3rem;
+    
+    
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    .admin-header {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+    }
+    .container {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    input, textarea, button {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .list-container {
+        margin-top: 30px;
+    }
+    .list-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background: #fdfdfd;
+    }
+    .list-item p {
+        margin: 0;
+    }
+    .list-item img {
+        max-width: 100%;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    .list-item video {
+        max-width: 100%;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    .list-item button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .list-item button:hover {
+        background: #a71d2a;
+    }
