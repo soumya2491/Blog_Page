@@ -1,4 +1,4 @@
-/* 
+ 
 .logo-icon{
 margin-left: 60px;
 height: 66px;
@@ -13,11 +13,11 @@ height: 40px;
 border: 3px solid black;
 padding: 5px;
 border-radius: 6px;
-} */
-/* .lastline{ */
-/* display: flex;
-justify-content: center; */
-/* margin: 30px;
+} 
+.lastline{
+display: flex;
+justify-content: center;
+margin: 30px;
 border-radius: 6px;
 background-color: white;
 gap: 10px;
@@ -51,7 +51,7 @@ height: 26px;
 height: 26px;
 }
 
- */
+
 
   /* mediatags (responsive) */
 
