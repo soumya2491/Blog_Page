@@ -21,10 +21,10 @@ body {
     width: 90%;
     max-width: 400px;
   }
-  /* @keyframes slideUp {
+  @keyframes slideUp {
     from { transform: translateY(50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
-  } */
+  }
   .heading {
     font-size: 32px;
     color: gray;
