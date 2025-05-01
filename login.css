@@ -1,86 +1,122 @@
-body{
-    background: linear-gradient(to bottom,#7caed4,#eeb8d1 , #977087);
-    background-size: 2080px 1000px;
-    /* background: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg); */
+body {
+    background: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  } 
-  .container{
-     display: flex;
-      height: auto;
-      width: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 190px;
-      margin-right: 500px;
-      z-index: 999;
-      filter: drop-shadow(-20px -20px rgba(247, 98, 98, 0.5));
-     
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  /* .frst{
-     border-top-left-radius:20px;
-     border-bottom-left-radius: 20px;
-      height: 448px;
-      width: 400px;
-      background: url(login-img.png);
-      background-size:401px 460.8px;
-      background-repeat: no-repeat;
-      
+  .container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    padding: 30px;
+    animation: slideUp 1s ease;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  /* @keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
   } */
-  .scnd{
-      background-color: rgb(193, 186, 186);
-      height: fit-content;
-      width: 500px;
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-    margin-bottom: 50px;
-      align-items: center;
+  .heading {
+    font-size: 32px;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
   }
-   /* .heading{
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 40px;
-      color: rgb(224, 44, 44); */
-      /* filter: drop-shadow(7px 9px rgba(180, 133, 133, 0.5)); */
-  /* }  */
-  .user-img{
-      border: 4px solid rgb(19, 11, 11);
-      border-radius: 50%;
-      height: 100px;
-      width: 100px;
-      padding: 3px;
-      margin: 15px;
+  .user-img {
+    border: 4px solid rgb(19, 11, 11);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 3px;
+    margin: 15px 0;
   }
-  .mail{
-      background: url(envelope-regular.svg);
-      background-repeat: no-repeat;
-      background-size: 20px;
-      background-position: 2px;
-      text-align: center;
-      padding: 6px;
-      margin: 20px;
-      border-radius: 6px;
-      font-weight: 300;
+  input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 10px 10px 10px 35px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-size: 20px;
+    font-size: 14px;
   }
-  .password{
-      background: url(key-solid.svg);
-      background-repeat: no-repeat;
-      background-size: 20px;
-      background-position: 2px;
-      text-align: center;
-      padding: 6px;
-      margin: 20px;
-      border-radius: 6px;
-      
+  input[type="email"] {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/561/561127.png');
   }
-  .btn{
-      margin: 20px;
-      border-radius: 6px;
-      padding: 8px;
-      background-color: rgba(247, 98, 98, 0.6);
+  input[type="password"] {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3064/3064155.png');
   }
-  .btn:hover{
-      cursor: pointer;
-      background-color:rgba(247, 98, 98, 0.9) ;
+  input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border: 2px solid rgba(247, 98, 98, 0.9);
+    background-color: #fff;
   }
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .options a {
+    text-decoration: none;
+    color: blue;
+  }
+  .btn {
+    width: 90%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background-color: rgba(247, 98, 98, 0.7);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: rgba(247, 98, 98, 0.9);
+  }
+  .social-login {
+    margin-top: 15px;
+  }
+  .social-login button {
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .google-btn {
+    background: #3d3f43;
+  }
+  .footer-msg {
+    font-size: 12px;
+    margin-top: 15px;
+    color: grey;
+  }
+  .footer-msg a {
+    text-decoration: none;
+    color: grey;
+  }
+  /* @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    } */
+  /* } */
