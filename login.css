@@ -1,0 +1,86 @@
+body{
+    background: linear-gradient(to bottom,#7caed4,#eeb8d1 , #977087);
+    background-size: 2080px 1000px;
+    /* background: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  .container{
+     display: flex;
+      height: auto;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 190px;
+      margin-right: 500px;
+      z-index: 999;
+      filter: drop-shadow(-20px -20px rgba(247, 98, 98, 0.5));
+     
+  }
+  /* .frst{
+     border-top-left-radius:20px;
+     border-bottom-left-radius: 20px;
+      height: 448px;
+      width: 400px;
+      background: url(login-img.png);
+      background-size:401px 460.8px;
+      background-repeat: no-repeat;
+      
+  } */
+  .scnd{
+      background-color: rgb(193, 186, 186);
+      height: fit-content;
+      width: 500px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+    margin-bottom: 50px;
+      align-items: center;
+  }
+   /* .heading{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 40px;
+      color: rgb(224, 44, 44); */
+      /* filter: drop-shadow(7px 9px rgba(180, 133, 133, 0.5)); */
+  /* }  */
+  .user-img{
+      border: 4px solid rgb(19, 11, 11);
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      padding: 3px;
+      margin: 15px;
+  }
+  .mail{
+      background: url(envelope-regular.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: 2px;
+      text-align: center;
+      padding: 6px;
+      margin: 20px;
+      border-radius: 6px;
+      font-weight: 300;
+  }
+  .password{
+      background: url(key-solid.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: 2px;
+      text-align: center;
+      padding: 6px;
+      margin: 20px;
+      border-radius: 6px;
+      
+  }
+  .btn{
+      margin: 20px;
+      border-radius: 6px;
+      padding: 8px;
+      background-color: rgba(247, 98, 98, 0.6);
+  }
+  .btn:hover{
+      cursor: pointer;
+      background-color:rgba(247, 98, 98, 0.9) ;
+  }
