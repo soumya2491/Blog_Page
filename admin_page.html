@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style_adminpage.css">
+</head>
+<body>
+    <!-- <nav>
+        <ul>
+            <li><a href=""><img class="logo-icon" src="logo.png" alt="">
+                    <p class="logo-title">READIFY</p>
+                </a></li>
+            <li><a href="main.html"> Home</a></li>
+            <li><a href="about_us.html"> About us</a></li>
+            <li><a href="#footer"> Contact</a></li>
+            <li><a href="signup.html"> <img class="profile-icon" src="user-profile.svg" alt=""> Readify</a></li>
+            <li onclick=showSidebar()><a href="#"> <img class="menu-icon" src="bars-solid.svg" alt=""></a></li>
+        </ul>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href=""> <img class="cross-icon" src="xmark-solid.svg"></a> </li>
+            <li><a href="signup.html"> Sign up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#"> Logout</a></li>
+        </ul>
+
+    </nav> -->
+
+    <div class="admin-header">
+        <h1> <i>Admin Panel </i></h1>
+    </div>
+
+    <div class="container">
+       
+        <h2><i>Add New Post</i></h2>
+        <form id="addPostForm">
+            <input type="text" id="postTitle" placeholder="Post Title" required>
+            <textarea id="postContent" placeholder="Post Content" rows="5" required></textarea>
+            <input type="file" id="postImage" accept="image/*">
+            <input type="url" id="postVideo" placeholder="Video URL (e.g., YouTube or direct link)">
+            <button type="submit">Add Post</button>
+        </form>
+
+<!--         
+        <div class="list-container">
+            <h2><i>Manage Posts</i></h2>
+            <div id="postsContainer">
+               
+            </div> -->
+        </div>
+    </div>
+</body>
+<!-- <script src="script_adminpage.js"></script> -->
+</html>
