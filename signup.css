@@ -177,3 +177,23 @@ input:focus {
     display: none;
 }
 
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.container {
+    animation: slideUp 0.6s ease;
+}
+@media (max-width: 768px) {
+.container {
+width: 90%;
+margin: 20px;
+margin-right: 0;
+margin-top: 100px;
+}
+input:focus {
+border: 2px solid rgba(247, 98, 98, 0.8);
+background-color: #ffffff;
+}
+}
