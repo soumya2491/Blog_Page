@@ -1,40 +1,33 @@
-name: Deploy Blog to GitHub Pages
-
 on:
   push:
     branches:
-      - main  # Make sure this matches your main branch
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      # Checkout the code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build your blog
+      # Set up any environment or dependencies you need
+      - name: Set up environment
         run: |
-          echo "🔧 Add your actual build commands here"
-          mkdir output
-          echo "<h1>Hello from GitHub Pages!</h1>" > output/index.html
+          # Add any setup commands here, if required
 
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v2
+      # Your build step (e.g., running tests, building code, etc.)
+      - name: Build project
+        run: |
+          # Add your build or test commands here, e.g., make, npm, etc.
+      
+      # Upload artifact step
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
         with:
-          path: output  # Replace 'output' with your actual build folder (e.g., 'dist', '_site')
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+          name: build-artifacts
+          path: path/to/your/artifacts
