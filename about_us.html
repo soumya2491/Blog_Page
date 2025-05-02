@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - READIFY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="aboutus.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-portion">
+            <h1>ABOUT &nbsp; US</h1>
+            <h2>
+                <i> " Your Gateway to Endless Inspiration "</i>
+            </h2>
+            <p style="font-family: Merriweather;font-weight: 400; line-height: 1.6;font-size: 25px;">At Readify, we
+                believe in the transformative power of reading. Our mission is to create a vibrant community where book
+                lovers, curious minds, and avid learners can discover, share, and engage with a diverse range of topics.
+                From in-depth articles and book reviews to insightful essays and thought-provoking discussions, Readify
+                is your go-to destination for all things literature and beyond. Join us on this journey to ignite your
+                passion for reading and explore the world, one blog post at a time!
+
+
+
+            </p>
+            <button class="btn">Read More</button><br><br>
+            <p class="icons"> <a href=""><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" style="text-decoration: none;"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;</a>
+                <a href="" style="text-decoration: none;"><i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;
+            </p></a>
+        </div>
+        <div class="left-portion">
+            <p><img class="logo" src="logo.png" alt=""></p>
+        </div>
+    </div>
+    <div class="container-2">
+        <h1 style="margin-left: 52%;">OUR &nbsp;TEAM</h1>
+        <p style="font-family: Merriweather;font-weight: 400; line-height: 1.6;font-size: 25px; margin: 20px;padding: 20px;">At Readify, we pride ourselves on a passionate and diverse team dedicated to bringing you the best in blog
+            content. Each member of our team shares a love for reading and a commitment to quality storytelling. Meet
+            the faces behind Readify:</p>
+    <div class="boxes">
+        <div class="box" onclick="openModal('soumyaModal')">
+            <p><i class="fa-solid fa-laptop-code"></i></p>
+            <h2>Soumya</h2>
+            <p>Lead Developer & JavaScript Architect</p>
+        </div>
+    
+        <div class="box" onclick="openModal('sejalModal')">
+            <p><i class="fa-solid fa-code"></i></p>
+            <h2>Sejal</h2>
+            <p>UI/UX & Front-End Developer</p>
+        </div>
+        
+        <div class="box" onclick="openModal('shivModal')">
+            <p><i class="fa-solid fa-pen-nib"></i></p>
+            <h2>Shiv</h2>
+            <p>Content Strategy & Digital Experience</p>
+        </div>
+        
+        <div class="box" onclick="openModal('ishantModal')">
+            <p><i class="fa-solid fa-lock"></i></p>
+            <h2>Ishant</h2>
+            <p>Authentication & User Experience Architect</p>
+        </div>
+    </div>
+    
+    <!-- MODALS BELOW -->
+    <div id="soumyaModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('soumyaModal')">&times;</span>
+            <h2>Soumya - Lead Developer</h2>
+            <p>Soumya is the driving force behind Readify's core functionality. With a mastery of JavaScript, she builds responsive interfaces, manages asynchronous data flows, and integrates REST APIs to provide a seamless reading experience. She leads the dev team, mentors peers, and ensures clean, maintainable code architecture. Her technical leadership pushes Readify beyond boundaries.</p>
+        </div>
+    </div>
+    
+    <div id="sejalModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sejalModal')">&times;</span>
+            <h2>Sejal - Front-End Developer</h2>
+            <p>Sejal enhances interactivity with JavaScript, building features that make Readify fast and responsive. Her work ensures smooth navigation, animations, and a user-centric experience.</p>
+        </div>
+        
+        <div id="shivModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('shivModal')">&times;</span>
+                <h2>Shiv - Content Creator</h2>
+                <p>Shiv utilizes advanced **SEO** tools, **keyword research**, and **content analytics** to shape high-impact articles that drive organic growth. By leveraging real-time data, Shiv refines content strategies to improve user engagement and maximize content ROI.</p>
+            </div>
+
+        <div id="ishantModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('ishantModal')">&times;</span>
+                <h2>Ishant - User Experience Architect</h2>
+                <p>  Ishant is specializing in crafting seamless and secure login experiences. With a keen eye for user experience and a deep understanding of web security,he makes sure every user feels safe and welcomed from the moment they join..</p>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+<script src="aboutus.js"></script>    
+</body>
+
+</html>
