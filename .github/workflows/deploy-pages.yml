@@ -1,36 +1,40 @@
-name: Deploy Static Site to GitHub Pages
+name: Deploy Blog to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main  # Make sure this matches your main branch
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - name: Build your blog
+        run: |
+          echo "🔧 Add your actual build commands here"
+          mkdir output
+          echo "<h1>Hello from GitHub Pages!</h1>" > output/index.html
 
-      - name: Upload site
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./
+          path: output  # Replace 'output' with your actual build folder (e.g., 'dist', '_site')
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
